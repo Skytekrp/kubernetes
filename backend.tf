@@ -5,5 +5,14 @@ terraform   {
       container_name       = "tfstate1"
       key                  = "terraform.tfstate"
      }
-
+required_providers {
+    azurerm = {
+      version = "~>3.2"
+      source  = "hashicorp/azurerm"
+    }
+  }
+}
+# Configure the Azure provider
+provider "azurerm" { 
+  features {}  
 }
