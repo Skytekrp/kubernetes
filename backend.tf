@@ -12,7 +12,3 @@ required_providers {
     }
   }
 }
-# Configure the Azure provider
-provider "azurerm" { 
-  features {}  
-}
